@@ -1,19 +1,10 @@
-import React, {useState, useEffect}  from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
+import ImageDiv from "./components/ImageDiv";
 
-
-
-function ImgPuller(props){
-  
-  return(
-    <div className="image-div">
-      <img src="https://picsum.photos/200"></img>
-    </div>
-  )
-}
 
 function App() {
-  const [image, setImage] = useState();
+
   return (
     <div className="App">
       <div className="header">
@@ -23,9 +14,13 @@ function App() {
       </div>
       <p>
         Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
+        app! Have fun{" "}
+        <span role="img" aria-label="go!">
+          🚀
+        </span>
+        !
       </p>
-      <ImgPuller />
+      <ImageDiv />
     </div>
   );
 }
